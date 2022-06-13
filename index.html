@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space 1.8 - nala sinephro</title>
+</head>
+
+
+
+
+
+<body class="background-blend">
+    <nav class="navigation">
+        <div class="navi-item mousemove borderboxheader meindiv a"><a href="about.html" target="self">about</a></div>
+        <div class="navi-item mousemove borderboxheader meindiv a"><a href="album.html" target="self">listen to album</a></div>
+        <div class="navi-item active mousemove borderboxheader meindiv a"><a href="https://www.nalasinephro.com/" target= "_blank" rel="nofollow noopener noreferrer">nala's homepage</a></div>
+        <div class="navi-item mousemove borderboxheader meindiv a"><a href="https://www.instagram.com/nalasinephro/" target="_blank" rel="nofollow noopener noreferrer">instagram</a></div>
+    </nav>
+
+
+
+ <div class="container">
+     <img src="/img/TKw_g2_1.png" class="object" data-value="-9" alt="">
+     <img src="/img/TKw_g2_2.png" class="object" data-value="-6" alt="">
+     <img src="/img/TKw_g2_3.png" class="object" data-value="-4" alt="">
+     <img src="/img/TKw_g2_4.png" class="object" data-value="-2" alt="">
+     <img src="/img/TKw_g2_5.png" class="object" data-value="2" alt="">
+     <img src="/img/TKw_g2_6.png" class="object" data-value="4" alt="">
+     <img src="/img/TKw_g2_7.png" class="object" data-value="6" alt="">
+     <img src="/img/TKw_g2_8.png" class="object" data-value="9" alt="">
+ </div>   
+
+
+ <script type="text/javascript">
+     document.addEventListener("mousemove", parallax);
+     function parallax(e){
+         document.querySelectorAll(".object").forEach(function(move){
+
+            var moving_value = move.getAttribute("data-value");
+            var x = (e.clientX * moving_value) / 10;
+            var y = (e.clientY * moving_value) / 10;
+
+            move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+         });
+     }
+ </script>
+
+
+
+
+
+
+<p><a href="space18.html" target="blank">space 1.8</a></p>
+
+</body>
+</html>
+
+
+
+
+
+
+<!--
+<nav class="navigation-footer"></nav>
+<script src="index.js"></script>
+
+-->
